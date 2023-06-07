@@ -2,9 +2,9 @@ import { InMemoryCheckInsRepository } from '@/repositories/in-memory/in-memory-c
 import { InMemoryGymsRepository } from '@/repositories/in-memory/in-memory-gyms-repository';
 import { Decimal } from '@prisma/client/runtime/library';
 import { expect, describe, it, beforeEach, vi, afterEach } from 'vitest';
-import { CheckInUseCase } from './check-in';
-import { MaxDistanceError } from './errors/max-distance-error';
-import { MaxNumberOfCheckInsError } from './errors/max-number-of-check-ins-error';
+import { CheckInUseCase } from './../check-in';
+import { MaxDistanceError } from './../errors/max-distance-error';
+import { MaxNumberOfCheckInsError } from './../errors/max-number-of-check-ins-error';
 
 let checkInsRepository: InMemoryCheckInsRepository;
 let gymsRepository: InMemoryGymsRepository;
